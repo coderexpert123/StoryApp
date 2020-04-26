@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".setting">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="match_parent"
+        android:layout_height="249dp"
+
+        android:layout_marginTop="26dp"
+        android:scaleType="fitCenter"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="18936-settings.json"
+        app:lottie_loop="true" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+
+        android:padding="5dp"
+        android:layout_height="275dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="61dp">
+
+            <Switch
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:text="Home "
+                android:textSize="20dp"
+                android:onClick="gotohome"
+                android:textStyle="bold"></Switch>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="61dp">
+
+            <Switch
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="sharenowing"
+                android:text="Share  "
+                android:textSize="20dp"
+                android:textStyle="bold"></Switch>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="61dp">
+
+            <Switch
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:text="Night Mode "
+                android:textSize="20dp"
+                android:textStyle="bold"></Switch>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="61dp">
+
+            <Switch
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="logonu"
+                android:text="Logout   "
+                android:textSize="20dp"
+                android:textStyle="bold"></Switch>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="80dp">
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+        </RatingBar>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:textSize="23dp"
+        android:layout_marginTop="7dp"
+        android:gravity="center"
+        android:text="Version : 3.6">
+
+    </TextView>
+
+
+</LinearLayout>
